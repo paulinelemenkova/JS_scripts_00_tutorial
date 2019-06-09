@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <script>
+            "use strict";
+            // https://learn.javascript.ru/operators#slozhenie-strok-binarnyy
+            
+            var hour = 12,
+            isWeekend = true;
+            // JavaScript вычисляет несколько ИЛИ слева направо.
+            if (hour < 10 || hour > 18 || isWeekend) {
+                alert( 'Офис до 10 или после 18 или в выходной закрыт' );
+            }
+        
+        alert( null || 2 || undefined ); // 2
+        
+        
+        // оператор ИЛИ || вычисляет ровно столько значений, сколько необходимо – до первого true.
+        // ИЛИ || вычисляет операнды слева направо до первого «истинного» и возвращает его, а если все ложные – то последнее значение. ИЛИ || запинается на «правде».
+        
+        alert( true && true ); // true
+        alert( false && true ); // false
+        alert( true && false ); // false
+        alert( false && false ); // false
+        
+        // оператор && вычисляет операнды слева направо до первого «ложного» и возвращает его, а если все истинные – то последнее значение. И "&& запинается на лжи".
+        // Приоритет оператора И && больше, чем ИЛИ ||, так что он выполняется раньше.
+        
+        alert( 5 || 1 && 0 ); // 5
+        
+        alert( 1 && null && 2 ); //null 
+        
+        // ! (НЕ)
+        
+        
+        </script>
+    </body>
+    
+</html>

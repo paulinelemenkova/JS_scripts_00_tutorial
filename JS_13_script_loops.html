@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <script>
+        "use strict";
+        // https://learn.javascript.ru/while-for
+        // while (условие) {
+        // код, тело цикла
+        // }
+        
+        /// Цикл while
+        var i = 0;
+        while (i < 3) {
+            alert( i );
+            i++;
+        }
+        
+        /// Цикл do…while
+        var i = 0;
+        do {
+            alert( i );
+            i++;
+        } while (i < 3);
+        
+        /// Цикл for. Чаще всего применяется цикл for.
+        var i;
+        for (i = 0; i < 3; i++) {
+            alert( i );
+        }
+        ///Здесь:
+        //Начало: i=0.
+        //Условие: i<3.
+        //Шаг: i++.
+        //Тело: alert(i), т.е. код внутри фигурных скобок
+        
+        //
+        var sum = 0;
+        while (true) {
+            var value = +prompt("Введите число", '');
+            if (!value) break; // (*)
+            sum += value;
+        }
+        alert( 'Сумма: ' + sum );
+        
+        /// Следующая итерация: continue
+        for (var i = 0; i < 10; i++) {
+            if (i % 2 == 0) continue;
+            alert(i);
+        }
+        
+        
+        ///
+        outer: for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                var input = prompt('Значение в координатах '+i+','+j, '');
+                // если отмена ввода или пустая строка -
+                // завершить оба цикла
+                if (!input) break outer; // (*)
+            }
+        }
+        alert('Готово!');
+        
+        ///  3 types of loops:
+        // while – The condition is checked before each iteration.
+        // do..while – The condition is checked after each iteration.
+        // for (;;) – The condition is checked before each iteration, additional settings available.
+        
+        var i = 3;
+        while (i) {
+            alert( i-- );
+        }
+        
+        // Префиксный вариант
+        var i = 0;
+        while (++i < 5) alert( i );
+        
+        // Постфиксный вариант
+        var i = 0;
+        while (i++ < 5) alert( i );
+        
+        // При помощи цикла for выведите чётные числа от 2 до 10.
+        for (var i = 2; i <= 10; i++) {
+            if (i % 2 == 0) {
+                alert( i );
+            }
+        }
+        
+        //
+        for (var i = 0; i < 3; i++) {
+            alert( "номер " + i + "!" );
+        }
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <script>
+        "use strict";
+        // https://learn.javascript.ru/function-basics
+        
+        // Возврат значения
+        function calcD(a, b, c) {
+            return b*b - 4*a*c;
+        }
+        
+        var test = calcD(-4, 2, 1);
+        alert(test); // 20
+        
+        ///////////
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                return confirm('Родители разрешили?');
+            }
+        }
+        
+        var age = prompt('Ваш возраст?');
+        
+        if (checkAge(age)) {
+            alert( 'Доступ разрешен' );
+        } else {
+            alert( 'В доступе отказано' );
+        }
+        
+        /////////////// Значение функции без return и с пустым return
+        function doNothing() { /* пусто */ }
+        
+        alert( doNothing() ); // undefined
+        // Обратите внимание, никакой ошибки нет. Просто возвращается undefined.
+        
+        
+        </script>
+    </body>
+    
+</html>

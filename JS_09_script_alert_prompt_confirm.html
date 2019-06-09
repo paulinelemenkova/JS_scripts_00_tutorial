@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <script>
+            "use strict";
+            // https://learn.javascript.ru/operators#slozhenie-strok-binarnyy
+            
+            // prompt выводит сообщение и ждёт, пока пользователь введёт текст, а затем возвращает введённое значение или null, если ввод отменён (CANCEL/Esc). alert выводит сообщение.
+            var count = prompt('Сколько у вас котов ?', 3);
+            alert('У меня ' + count + ' кота!')
+            
+            
+            var name = prompt("Как их зовут ?", "");
+            alert( name );
+            
+            // result = confirm(question); confirm выводит сообщение и ждёт, пока пользователь нажмёт «OK» или «CANCEL» и возвращает true/false.
+            var month = confirm("Сейчас июнь ?");
+            alert( month );
+            
+        </script>
+    </body>
+    
+</html>

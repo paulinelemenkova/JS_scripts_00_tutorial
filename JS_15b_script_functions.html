@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <script>
+        "use strict";
+        // https://learn.javascript.ru/function-basics
+        
+        ////////////////////////
+        var userName = 'Полина';
+        
+        function showMessage() {
+            var message = 'Привет, я ' + userName;
+            alert(message);
+        }
+        
+        showMessage(); // Привет, я Полина
+       
+       
+       ////////////////////////
+        var userName = 'Полина';
+        
+        function showMessage() {
+            userName = 'Polina'; // (1) присвоение во внешнюю переменную
+            
+            var message = 'Привет, я ' + userName;
+            alert( message );
+        }
+        
+        showMessage();
+        
+        alert( userName ); // Polina, значение внешней переменной изменено функцией
+        
+        </script>
+    </body>
+    
+</html>

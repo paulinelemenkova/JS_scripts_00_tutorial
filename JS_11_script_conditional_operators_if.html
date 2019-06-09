@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <script>
+            "use strict";
+            // https://learn.javascript.ru/operators#slozhenie-strok-binarnyy
+            
+        var year = prompt('Введите год появления стандарта ECMA-262 5.1 (верный ответ - 2011)', '');
+            
+            if (year == 2011) {
+                alert( 'Да вы знаток!' );
+            } else {
+                alert( 'А вот и неправильно!' ); // любое значение, кроме 2011
+            }
+        
+        /////
+        var year = prompt('В каком году появилась спецификация ECMA-262 5.1? (2011)', '');
+        
+        if (year < 2011) {
+            alert( 'Это слишком рано..' );
+        } else if (year > 2011) {
+            alert( 'Это поздновато..' );
+        } else {
+            alert( 'Да, точно в этом году!' );
+        }
+        
+        /////////
+        var age = prompt('Сколько вам лет ?', '');
+        
+        if (age < 3) {
+            alert( 'Здравствуй, малыш!' );
+        } else if (age < 18) {
+            alert(  'Привет!' );
+        } else if (age < 100) {
+            alert(  'Здравствуйте!' );
+        } else { // например 102
+            alert = 'Какой необычный возраст!';
+        }
+        
+        </script>
+    </body>
+    
+</html>
